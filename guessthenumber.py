@@ -1,14 +1,14 @@
 import random
 print ("pick a # 1-100:")
-x = int(input())
-y = random.randrange(1,100)
-if x == y:
+number = int(input())
+randomnumber = random.randrange(1,100)
+if number == randomnumber:
     print("you did it!")
-elif x > 100 or x < 0:
+elif number > 100 or number < 0:
     print("smart one")
 else:
-    if x > y: 
-        rip = x - y
+    if number > randomnumber: 
+        wrong = number - randomnumber
     else:
-        rip = y - x
-    print("you were " + str(rip) + "off")
+        wrong = randomnumber - number
+    print("you were " + str(wrong) + " off")
